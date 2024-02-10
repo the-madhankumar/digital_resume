@@ -12,7 +12,7 @@ load_dotenv()
 with open('assets/data.json') as file:
     my_info = json.loads(file.read())
 
-with open('assets/Resume.pdf', 'rb') as file:
+with open('assets/resume.pdf', 'rb') as file:
     pdf_data = file.read()
 
 lottie_animation = 'https://assets10.lottiefiles.com/packages/lf20_O2ci8jA9QF.json'
@@ -56,7 +56,7 @@ with st.container():
             )
 
     with left:
-        st.image(img_photo, width=380)
+        st.image(img_photo, width=340)
     st.markdown('---')
 
 with st.container():
@@ -103,6 +103,20 @@ if option == 'Home':
     
     # Display education details
     st.markdown(f"**Company** {inter_info['Company']}")
+    st.write(f"**Position:** {inter_info['Position']}")
+    st.write(f"**Year:** {inter_info['year']}")
+
+    st.markdown("# ACHEIVEMENTS ")
+
+    # Single degree information
+    inter_info = {
+        "competition": "HARYANA POLICE HACKATHON",
+        "Position": "App Developer",
+        "year": "2024",
+    }
+    
+    # Display education details
+    st.markdown(f"**Competition** {inter_info['competition']}")
     st.write(f"**Position:** {inter_info['Position']}")
     st.write(f"**Year:** {inter_info['year']}")
 
