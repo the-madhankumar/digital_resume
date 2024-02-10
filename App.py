@@ -12,7 +12,7 @@ load_dotenv()
 with open('assets/data.json') as file:
     my_info = json.loads(file.read())
 
-with open('assets/resume.pdf', 'rb') as file:
+with open('assets/Resume.pdf', 'rb') as file:
     pdf_data = file.read()
 
 lottie_animation = 'https://assets10.lottiefiles.com/packages/lf20_O2ci8jA9QF.json'
