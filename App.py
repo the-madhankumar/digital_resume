@@ -116,7 +116,7 @@ if option == 'Home':
     }
     
     # Display education details
-    st.markdown(f"**Competition** {inter_info['competition']}")
+    st.markdown(f"**Competition:** {inter_info['competition']}")
     st.write(f"**Position:** {inter_info['Position']}")
     st.write(f"**Year:** {inter_info['year']}")
 
